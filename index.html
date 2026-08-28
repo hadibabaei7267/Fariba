@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>پرونده تولد فریبا</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- نور و ذرات پس زمینه -->
+    <div id="ambient"></div>
+    <div id="lightPulse"></div>
+
+    <div id="stickers"></div>
+    <div id="confetti"></div>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- INTRO -->
+        <!-- ========================= -->
+
+        <section id="intro" class="screen active">
+
+            <div class="classified">
+                CLASSIFIED · F.R.B · 2026
+            </div>
+
+            <div class="lockIcon">
+                🔐
+            </div>
+
+            <h1>
+                پرونده‌ی تولد فریبا
+            </h1>
+
+            <p>
+                یک پرونده‌ی محرمانه درباره‌ی یک آدم دوست‌داشتنی...
+            </p>
+
+            <button id="start" class="gold">
+                باز کردن پرونده ✨
+            </button>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- QUIZ -->
+        <!-- ========================= -->
+
+        <section id="quiz" class="screen">
+
+            <div class="step">
+                LEVEL 01 · تأیید هویت
+            </div>
+
+            <h2>
+                مطمئن شو خودِ فریبا وارد شده! 😏
+            </h2>
+
+            <p id="hint">
+                سه قفل کوچک را باز کن تا آرشیو فعال شود.
+            </p>
+
+            <div id="quizbox"></div>
+
+            <div class="progress">
+                <span id="bar"></span>
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- BOOK -->
+        <!-- ========================= -->
+
+        <section id="bookScreen" class="screen bookScreen">
+
+            <header class="bookHeader">
+
+                <span>
+                    F.R.B · SPECIAL BIRTHDAY EDITION
+                </span>
+
+                <button id="music" class="round">
+                    🎵
+                </button>
+
+            </header>
+
+
+            <div id="chapter" class="chapter">
+                شروع پرونده
+            </div>
+
+
+            <div class="bookArea">
+
+                <button id="prev" class="nav">
+                    ‹
+                </button>
+
+
+                <div class="book">
+
+                    <!-- ضخامت کتاب -->
+                    <div class="bookThickness"></div>
+
+                    <!-- عطف -->
+                    <div class="bookSpine"></div>
+
+                    <!-- صفحات پایه -->
+                    <div class="baseSpread">
+
+                        <div class="basePage leftPage">
+
+                            <div class="pageDecoration topLeft">
+                                ✿
+                            </div>
+
+                            <div class="pageDecoration bottomLeft">
+                                ❀
+                            </div>
+
+                            <div id="leftContent"></div>
+
+                        </div>
+
+
+                        <div class="basePage rightPage">
+
+                            <div class="pageDecoration topRight">
+                                ❀
+                            </div>
+
+                            <div class="pageDecoration bottomRight">
+                                ✿
+                            </div>
+
+                            <div id="rightContent"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- صفحه ای که واقعاً ورق می‌خورد -->
+                    <div id="flipPage" class="flipPage">
+
+                        <div class="flipFront">
+                            <div class="pageDecoration topRight">
+                                ✿
+                            </div>
+
+                            <div class="flipContent"></div>
+                        </div>
+
+                        <div class="flipBack">
+                            <div class="pageDecoration topLeft">
+                                ❀
+                            </div><div class="flipContent"></div>
+                        </div>
+
+                        <div class="pageShine"></div>
+
+                    </div>
+
+
+                    <!-- جلد -->
+                    <div id="cover" class="cover">
+
+                        <div class="coverGlow"></div>
+
+                        <small>
+                            SPECIAL BIRTHDAY EDITION
+                        </small>
+
+                        <b>
+                            مجله‌ی
+                            <br>
+                            فریبا
+                        </b>
+
+                        <p>
+                            یک پرونده‌ی کوچک
+                            <br>
+                            برای یک آدم دوست‌داشتنی
+                        </p>
+
+                        <i>
+                            ✦
+                        </i>
+
+                    </div>
+
+                </div>
+
+
+                <button id="next" class="nav">
+                    ›
+                </button>
+
+            </div>
+
+
+            <footer class="bookFooter">
+
+                <span id="counter">
+                    جلد
+                </span>
+
+                <button id="secret" class="gold mini">
+                    🔍 مدرک محرمانه
+                </button>
+
+                <button id="challenge" class="gold mini">
+                    🎮 چالش
+                </button>
+
+            </footer>
+
+
+            <div id="note" class="note"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CHALLENGE -->
+        <!-- ========================= -->
+
+        <section id="challengeScreen" class="screen">
+
+            <div class="lockedBox">
+
+                <div class="lockBig">
+                    🔐
+                </div>
+
+                <div class="step">
+                    LOCKED CHAPTER
+                </div>
+
+                <h2>
+                    مدرک درست را پیدا کن 🔎
+                </h2>
+
+                <p>
+                    فقط یکی از این مدارک مسیر پرونده را باز می‌کند.
+                </p>
+
+                <div id="choices" class="choices"></div>
+
+                <div id="result"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FINALE -->
+        <!-- ========================= -->
+
+        <section id="finale" class="screen">
+
+            <div id="finalDarkness"></div>
+
+            <div id="surpriseBox" class="surpriseBox">
+
+                <div class="surpriseIcon">
+                    🎁
+                </div>
+
+                <div class="step">
+                    FINAL CLASSIFIED FILE
+                </div>
+
+                <h2>
+                    یک سؤال آخر...
+                </h2>
+
+                <p>
+                    آماده‌ای آخرین صفحه‌ی پرونده رو ببینی؟ 😏
+                </p>
+
+                <button id="revealBtn" class="gold">
+                    باز کردن سورپرایز ✨
+                </button>
+
+            </div>
+
+
+            <div id="finalReveal" class="finalReveal">
+
+                <div class="finalPhotoWrap">
+
+                    <div class="photoGlow"></div>
+
+                    <img
+                        id="finalPhoto"
+                        src="assets/photos/20.jpg"
+                        alt="Fariba"
+                    >
+
+                </div>
+
+
+                <div class="voiceBox">
+
+                    <div class="microphone">
+                        🎙️
+                    </div>
+
+                    <div class="step">
+                        LAST PAGE
+                    </div>
+
+                    <h2>
+                        آخرین صفحه
+                    </h2>
+
+                    <p id="poem"></p>
+
+                    <button id="voiceBtn" class="gold">
+                        پخش دکلمه 🎧
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="birthday"><div class="nameLetters">
+                    <span>F</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>B</span>
+                    <span>A</span>
+                </div>
+
+                <strong>
+                    تولدت مبارک فریبا 🎂✨
+                </strong>
+
+                <small>
+                    قشنگ‌ترین فصل‌ها هنوز نوشته نشده‌اند.
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- AUDIO -->
+    <!-- ========================= -->
+
+    <audio id="bg" preload="auto">
+        <source src="assets/audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="voiceAudio" preload="auto">
+        <source src="assets/audio/voice.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
